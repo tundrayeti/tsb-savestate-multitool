@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>TSB_Stat_Extractor</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.1</FileVersion>
+    <Platforms>AnyCPU</Platforms>
+    <Copyright>Copyleft 2023</Copyright>
+    <Authors>tundrayeti</Authors>
+    <Description>Extracts game statistics from a TSB save state file.</Description>
+    <Title>TSB StatExtractor</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TSB SaveState MultiTool\TSB SaveState MultiTool.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="..\TSB SaveState MultiTool\Fonts\GF-TecmoNarrow.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="..\TSB SaveState MultiTool\Fonts\GF-TecmoSet1.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="..\TSB SaveState MultiTool\Fonts\GF-TecmoSet2.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="..\TSB SaveState MultiTool\Fonts\TecmoRoundAllCaps.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

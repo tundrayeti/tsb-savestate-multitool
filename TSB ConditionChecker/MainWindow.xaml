@@ -1,0 +1,98 @@
+﻿<Window x:Class="TSB_Condition_Checker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TSB_Condition_Checker"
+        mc:Ignorable="d"
+        Title="TSB Condition Checker" Height="800" Width="600" Background="Black" Foreground="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblMain" Content="TSB Condition Checker" VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="2" FontFamily="GF TECMO Set 1" FontSize="20" HorizontalAlignment="Left" VerticalContentAlignment="Stretch" Foreground="#FF07F5CF" />
+        <Label x:Name="lblMain_2" Content="by tundrayeti" FontFamily="GF TECMO Set 1" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" IsEnabled="False" HorizontalContentAlignment="Right" />
+        <Label x:Name="lbl_homeTeam" Content="HOME TEAM" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="LightGoldenrodYellow" />
+        <Label x:Name="lbl_awayTeam" Content="AWAY TEAM" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="LightGoldenrodYellow" />
+        <Label x:Name="lbl_QbStats" Content="MS, etc." Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="LightGoldenrodYellow"/>
+        <Label x:Name="lbl_Qb1" Content="QB1" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Qb1Attr" Content="44 13" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Qb2" Content="QB2" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Qb2Attr" Content="44 13" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_HandsStats" Content="MS, etc." Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="LightGoldenrodYellow"/>
+        <Label x:Name="lbl_Rb1" Content="RB1" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb1Attr" Content="44 13" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb2" Content="RB2" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb2Attr" Content="44 13" Grid.Row="8" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb3" Content="RB3" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb3Attr" Content="44 13" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb4" Content="RB4" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Rb4Attr" Content="44 13" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr1" Content="WR1" Grid.Row="12" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr1Attr" Content="44 13" Grid.Row="12" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr2" Content="WR2" Grid.Row="13" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr2Attr" Content="44 13" Grid.Row="13" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr3" Content="WR3" Grid.Row="14" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr3Attr" Content="44 13" Grid.Row="14" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr4" Content="WR4" Grid.Row="15" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Wr4Attr" Content="44 13" Grid.Row="15" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Te1" Content="TE1" Grid.Row="17" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Te1Attr" Content="44 13" Grid.Row="17" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Te2" Content="TE2" Grid.Row="18" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Te2Attr" Content="44 13" Grid.Row="18" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_KStats" Content="MS, etc." Grid.Row="19" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="LightGoldenrodYellow"/>
+        <Label x:Name="lbl_K1" Content="K1" Grid.Row="20" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_K1Attr" Content="44 13" Grid.Row="20" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_DefStats" Content="MS, etc." Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="LightGoldenrodYellow"/>
+        <Label x:Name="lbl_Dl1" Content="DL1" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Dl1Attr" Content="44 13" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Dl2" Content="DL2" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Dl2Attr" Content="44 13" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Dl3" Content="DL3" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Dl3Attr" Content="44 13" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb1" Content="LB1" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb1Attr" Content="44 13" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb2" Content="LB2" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb2Attr" Content="44 13" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb3" Content="LB3" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb3Attr" Content="44 13" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb4" Content="LB4" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Lb4Attr" Content="44 13" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db1" Content="DB1" Grid.Row="12" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db1Attr" Content="44 13" Grid.Row="12" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db2" Content="DB2" Grid.Row="13" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db2Attr" Content="44 13" Grid.Row="13" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db3" Content="DB3" Grid.Row="14" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db3Attr" Content="44 13" Grid.Row="14" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db4" Content="DB4" Grid.Row="15" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Db4Attr" Content="44 13" Grid.Row="15" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Kr" Content="KR" Grid.Row="17" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lbl_Pr" Content="PR" Grid.Row="18" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
+        <Label x:Name="lblVersion" Grid.Row="21" Grid.Column="1" Content="v.0.0.0.1" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsEnabled="False" FontSize="10" FontFamily="Consolas"  Foreground="White"/>
+    </Grid>
+</Window>
